@@ -1,0 +1,7 @@
+button{
+    width: auto;
+    height: auto;
+    margin-right: 10%;
+    text-wrap:nowrap;
+    cursor: pointer;
+}

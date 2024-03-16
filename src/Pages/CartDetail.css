@@ -1,0 +1,52 @@
+.parent{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    }
+ul{
+    list-style-type: none;
+
+}
+
+.ordersummary{
+    border: 1px solid rgba(0, 0, 0, 0.969);
+    border-radius: 10px;
+    min-width: 25vw;
+    /*min-width: auto;*/
+    min-height: auto;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5vw;
+    margin-top: 30vh;
+    
+}
+
+h2{
+    border-bottom: 2px solid black;
+    padding-bottom: 3vh;
+    padding-top: 1vh;
+    padding-right:1vw;
+    padding-left:1vw ;
+    margin: 0;
+}
+h3{
+    margin-top: 1vh;
+    margin-bottom: 4vh;
+}
+button{
+    font-size: larger;
+    margin-bottom: 2vh;
+    cursor: pointer;
+}
+
+h1{
+    margin-left: 20vw;
+    margin-bottom: 10vh;
+}

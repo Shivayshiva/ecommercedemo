@@ -1,0 +1,50 @@
+.signup{
+    width: 30vw;
+        max-height: auto;
+        border: 2px solid rgba(0, 0, 0, 0.402);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 15vh;
+}
+
+label{
+    font-size:x-large;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+input{
+    width: 25vw;
+    height: auto;
+    font-size: larger;
+    padding: 0.7%;
+    border: 1px solid rgba(0, 0, 0, 0.402);
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+
+#signup-user{
+    /*align-self: center;*/
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 0;
+}
+button{
+    padding:3%;
+    cursor: pointer;
+}
+p{
+    margin: 0;
+}
+
+#h4signup{
+    cursor: pointer;
+}
