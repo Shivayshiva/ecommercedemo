@@ -22,23 +22,23 @@ export default function Home() {
     }
     getData();
   }, []);
-  useEffect(()=>{
-     async function getDBdata(){
-      //const data = await fetch("https://ecommerce-8187f-default-rtdb.firebaseio.com/");
-      const data= await fetch("https://ecommerce-8187f-default-rtdb.firebaseio.com/chartaddeddata.json");
-      const datajson=await data.json();
+  //useEffect(()=>{
+  //   async function getDBdata(){
+  //    //const data = await fetch("https://ecommerce-8187f-default-rtdb.firebaseio.com/");
+  //    const data= await fetch("https://ecommerce-8187f-default-rtdb.firebaseio.com/chartaddeddata.json");
+  //    const datajson=await data.json();
       
-      if(datajson===null){
-        dispatch(addDatabaseItem([]));
-      }
-      else{
-        //console.log("Datajson",Object.values(datajson)[0]);
-        dispatch(addDatabaseItem(Object.values(datajson)[0]));
-      }
+  //    if(datajson===null){
+  //      dispatch(addDatabaseItem([]));
+  //    }
+  //    else{
+  //      //console.log("Datajson",Object.values(datajson)[0]);
+  //      dispatch(addDatabaseItem(Object.values(datajson)[0]));
+  //    }
       
-     }
-     getDBdata()
-  },[])
+  //   }
+  //   getDBdata()
+  //},[])
   return (
     <div>
       <Navbar />

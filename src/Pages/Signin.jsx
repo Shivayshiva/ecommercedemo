@@ -24,7 +24,22 @@ export default function Signin() {
       localStorage.setItem("user", JSON.stringify(user));
       console.log(userCredential);
       if(user.accessToken){
-        dispatch(setlogin())
+        async function getDBdata(){
+          //const data = await fetch("https://ecommerce-8187f-default-rtdb.firebaseio.com/");
+          const data= await fetch("https://ecommerce-8187f-default-rtdb.firebaseio.com/chartaddeddata.json");
+          const datajson=await data.json();
+          
+          if(datajson===null){
+            dispatch(addDatabaseItem([]));
+          }
+          else{
+            //console.log("Datajson",Object.values(datajson)[0]);
+            dispatch(addDatabaseItem(Object.values(datajson)[0]));
+          }
+          
+         }
+         getDBdata()
+        //dispatch(setlogin())
           navigate("/")
           }
       }

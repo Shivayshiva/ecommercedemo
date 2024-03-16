@@ -1,12 +1,9 @@
 import React from "react";
 import "./CartSection.css";
-import Purchased from "./Purchased";
-import { useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addCart, delCart } from "../Redux/action";
 
-export default function CartSection(props) {
-  //const data=useLocation().data;
+export default function CartSection(props){
   const dispatch=useDispatch();
   const handleAddition=()=>{
     dispatch(addCart({
@@ -26,7 +23,6 @@ export default function CartSection(props) {
       price: props.price
     }))
   }
-  //console.log("data")
   return (
       <div className="listitem">
           <div className="child1">

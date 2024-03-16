@@ -51,6 +51,7 @@ export default function LoginButton(props) {
           }          
         }
       } catch (error) {
+        
         console.error('Error deleting data:', error);
       }
     };
